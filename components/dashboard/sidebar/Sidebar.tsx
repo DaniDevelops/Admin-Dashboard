@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./sidebar.module.css";
 
-import MenuLink, { MenuProps } from "./menulink/MenuLink";
+import MenuLink from "./menulink/MenuLink";
 import Image from "next/image";
 import {
   MdAnalytics,
   MdAttachMoney,
   MdDashboard,
   MdHelpCenter,
+  MdLogout,
   MdOutlineSettings,
   MdPeople,
   MdShoppingBag,
@@ -103,6 +104,10 @@ export default function Sidebar() {
           </li>
         ))}
       </ul>
+      <button className={styles.logout}>
+        <MdLogout />
+        Logout
+      </button>
     </div>
   );
 }
